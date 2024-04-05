@@ -1,0 +1,33 @@
+body {
+	background: wheat;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+}
+.navbar-brand {
+	padding-left: 5%;
+}
+button {
+	padding-right: 5%;
+	margin-right: 5%;
+}
+.our-menu {
+	margin: 1em;
+}
+.menu-item {
+	background-color: #f5efcb;
+	border: 1px solid black;
+	height: 350px;
+	position: relative;
+}
+.back-to-top {
+	position: absolute;
+	bottom: 1px;
+	left: 1px;
+}
+.box {
+	background-color: green;
+	border: 1px solid black;
+	min-height: 50px;
+	font-size: 1em;
+}
