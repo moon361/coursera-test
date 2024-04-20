@@ -1,0 +1,10 @@
+.card {
+	background-color: #a39193;
+}
+.card:hover, .card:active {
+	background-color: #66545e;
+}
+.link {
+	text-decoration: none;
+	color: black;
+}
