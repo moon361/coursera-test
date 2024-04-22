@@ -1,13 +1,10 @@
 * {
 	box-sizing: border-box;
 }
-
 body {
 	background-color: #e3dae7;
-/*background-color: #ffcdb2;*/
 	padding: 50px;
 }
-
 h1 {
 	text-align: center;
 	margin-top: 0;
@@ -15,22 +12,12 @@ h1 {
 	font-family: calibri;
 	font-size: 5em;
 }
-
-div {
-	border: 1px solid black;
-	background-color: #b5838b;
-	height: 180px;
-	margin: 5% auto;
-	position: relative;
-}
-
 .row {
-/*	background-color: #66545e;*/
 	width: 100%;
-	margin:auto;
+	margin: auto;
 	padding: 1%;
+	border: 1px solid black;
 }
-
 h2 {
 	background-color: #565264;
 	border: 1px solid black;
@@ -39,18 +26,20 @@ h2 {
 	font-size: 2em;
 	margin: 0;
 	display: inline-block;
-	width: 120px;
-
+	width: 150px;
 }
-
+.relative {
+	position: relative;
+	margin-bottom: 10%;
+	background-color: #b5838b;
+	border: 1px solid black;
+}
 .position {
 	position: absolute;
+	top: 0;
 	right: 0;
-
 }
-
 p {
-/*	border: 1px solid black;*/
 	height: 130px;
 	padding: 5px;
 	margin-top: 13%;
@@ -58,8 +47,7 @@ p {
 	font-family: calibri;
 	font-size: 1em;
 }
-
-div:hover, div:active {
+.relative:hover, .relative:active {
 	background-color: #ac808c;
 	color: #66545e;
 }
@@ -69,17 +57,15 @@ div:hover, div:active {
 @media (min-width: 992px) {
 	.col-lg-4 {
 		float: left;
-		width: 29.3%;
+		width: 33.33%;
 	}
-
-	div {
-		margin: 2%;
+	.relative {
 		background-color: #ffb4a2;
+		margin: 5%;
 	}
-
-	/*.row {
-		height: 250px;
-	}*/
+	.row {
+		height: 230px;
+	}
 }
 
 /*TABLET VIEW*/
@@ -87,19 +73,17 @@ div:hover, div:active {
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-md-6 {
 		float: left;
-		width: 45%;
+		width: 50%;
 	}
-
-	div {
-		margin: 2.5%;
+	.col-md-12 {
+		float: left;
+		width: 100%;
+	}
+	.relative {
 		background-color: #e5989b;
+		margin: 1em;
 	}
-
-	div:nth-child(3) {
-		width: 95%;
-	} 
-
-	/*.row {
+	.row {
 		height: 500px;
-	}*/
+	}
 }
